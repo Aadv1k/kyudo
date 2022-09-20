@@ -1,0 +1,19 @@
+ul {
+  list-style: 1.4em;
+}
+
+ul li {
+  margin-block: .2em;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #191919;
+  font-family: var(--font-sans);
+}
+
+
+ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}

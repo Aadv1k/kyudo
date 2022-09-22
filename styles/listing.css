@@ -1,19 +1,21 @@
-ul {
+.listing {
   list-style: 1.4em;
 }
 
-ul li {
+.listing li {
   margin-block: .2em;
 }
 
-ul li a {
+.listing li a {
   text-decoration: none;
-  color: #191919;
   font-family: var(--font-sans);
 }
 
 
-ul li a:hover {
-  text-decoration: underline;
-  font-weight: bold;
+@media (hover: hover) {
+  .listing li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+  }
 }
+

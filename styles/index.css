@@ -14,6 +14,18 @@
   }
 }
 
+/* Simple hack to make implement nested lists*/
+
+ol > ul, ul > ol {
+  padding-left: 3em; 
+} 
+
+ol, ul { 
+  margin-block: 1em; 
+}
+
+/*********************************************/
+
 * {
  margin: 0;
  padding: 0;

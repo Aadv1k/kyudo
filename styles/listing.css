@@ -1,5 +1,6 @@
 .listing {
-  list-style: 1.4em;
+  padding: .5em 2em;
+  font-size: 1.1em;
 }
 
 .listing li {
@@ -11,7 +12,6 @@
   text-decoration: none;
   font-family: var(--font-sans);
 }
-
 
 @media (hover: hover) {
   .listing li a:hover {

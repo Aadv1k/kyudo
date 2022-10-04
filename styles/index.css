@@ -1,16 +1,17 @@
 :root {
   --font-sans: Arial, Helvetica, sans-serif;
   --font-serif: Georgia, 'Times New Roman', Times, serif;
+
+  --clr-bg: #f7f7ef;
+  --clr-text-1: #191919;
+  --clr-text-2: #282828;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    color: #eeece0;
-    background-color: #191919;
-  }
-
-  h1,h2,h3,h4, strong, b, em {
-    color: #f7f7ef;
+  :root {
+    --clr-bg: #191919;
+    --clr-text-1: #eeece0;
+    --clr-text-2: #f7f7ef;
   }
 }
 
@@ -31,13 +32,35 @@ ol, ul {
  padding: 0;
 }
 
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text-1);
+  font-family: var(--font-serif);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: var(--font-sans);
+  color: var(--clr-text-2);
+  margin-block: 1em;
+}
+
+em, b {
+  color: var(--clr-text-2);
+}
+
+code {
+  background-color: lightgrey;
+  color: black;
+  padding: .2em;
+}
+
 nav {
   padding: 1em;
   width: 100%;
 }
 
 nav a {
-  color: inherit;
+  color: var(--clr-text-2);
   font-family: var(--font-sans);
   font-size: 1.5em;
   text-decoration: none;
@@ -49,22 +72,14 @@ nav a {
   }
 }
 
-h1,h2,h3,h4 {
-  font-family: var(--font-sans);
-  margin-block: 1em;
-}
-
-.listing {
-  padding: .5em 2em;
-  font-size: 1.1em;
-  font-family: var(--font-serif);
-}
-
 section p, li:not(.listing li) {
-  padding-block: .1em;
-  width: 90%;
-  max-width: 80ch;
-  font-size: 1.3em;
+  padding-block: .5em;
+  max-width: 100ch;
+  font-size: 1.1em;
+}
+
+section a {
+  color: var(--clr-text-2);
 }
 
 section, nav, .listing {

@@ -1,4 +1,4 @@
-# Kyudo
+# Kyudo DEPRECATED - no longer works with Kevlar v2.0.0
 
 An _utterly_ minimalist theme for [Kevlar](https://github.com/aadv1k/kevlar) 
 
